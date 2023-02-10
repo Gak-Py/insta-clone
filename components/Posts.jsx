@@ -14,7 +14,7 @@ export default function Posts() {
       username: "shida",
       userImg:"https://images.unsplash.com/profile-1586795246793-9a7d890a432bimage?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff",
       img:"https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80",
-      caption: "Good picture"
+      caption: "Good pictureasdofipjpojwoijfpoiwjopfjowjfiojwiofjwoajfiojwoifjwiojfioawjfojwoifjiofjiowejioawjioawjfioajwiofjaiowfjowajiojawiofjoipws"
     }
   ]
   return (

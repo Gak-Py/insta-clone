@@ -1,4 +1,4 @@
-import { EllipsisHorizontalIcon } from "@heroicons/react/24/outline"
+import { EllipsisHorizontalIcon, HeartIcon, ChatBubbleLeftEllipsisIcon,BookmarkIcon, FaceSmileIcon } from "@heroicons/react/24/outline"
 
 export default function Post({img,userImg,caption,username,id}) {
   return (
@@ -11,6 +11,26 @@ export default function Post({img,userImg,caption,username,id}) {
       </div>
       {/* POST Image  */}
       <img className="object-cover w-full" src={img} />
+
+      {/* Post Buttons */}
+
+      <div className="flex justify-between px-4 pt-4">
+        <div className="flex space-x-4">
+          <HeartIcon className="btn" />
+          <ChatBubbleLeftEllipsisIcon className="btn" />
+        </div>
+        <BookmarkIcon className="btn" />
+      </div>
+
+      {/* Post Comments */}
+      <p className="p-5 truncate "><span className="font-bold mr-2">{username}</span>{caption}</p>
+
+      {/* Post input box */}
+      <form action="" className="flex items-center p-4">
+        <FaceSmileIcon className="h-7" />
+        <input className="border-none flex-1 focus:ring-0" type="text" placeholder="Enter your comment..."></input>
+        <button className="text-blue-400 font-bold">Post</button>
+      </form>
     </div>
   )
 }
