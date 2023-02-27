@@ -25,7 +25,7 @@ export default function Stories() {
         <Story img={session.user.image} username={ session.user.username} isUser="true" />
       )}
       {storyUsers.map(user=>(
-        <Story img={user.img} username={user.username}/>
+        <Story key={user.id} img={user.img} username={user.username}/>
       ))}
     </div>
   )
